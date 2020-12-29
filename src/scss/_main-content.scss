@@ -1,0 +1,66 @@
+.main-content {
+  padding: 0 15px;
+  
+  .bio {
+    //margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      padding-top: 10px;
+    }
+    .photo {
+      width: 600px;
+      height: 600px;
+      border-radius: 4px;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  .acac, .how-teach {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding-bottom: 25px;
+    }
+  }
+
+  .testimonials {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding-bottom: 25px;
+      span {
+        font-weight: 700;
+        display: block;
+        font-size: 14px;
+        &:before {
+          content: "- ";
+        }
+      }
+    }
+  }
+}
+
+// tablet and bigger
+@media (min-width: 768px) {
+  .main-content {
+    .bio {
+      .photo {
+        width: 1000px;
+        height: 600px;
+      }
+    }
+
+    .testimonials {
+      p span {
+        font-size: 18px;
+      }
+    }
+  }
+}

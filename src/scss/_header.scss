@@ -1,0 +1,26 @@
+.header {
+  cursor: default;
+  text-align: center;
+  background-color: $background-light-gray;
+  padding: 10px;
+  h1 {
+    padding: 20px 20px 0px 0px;
+    margin-bottom: 0px;
+    letter-spacing: 0.2em;
+    color: #333;
+  }
+  h2 {
+    margin-top: 0px;
+    color: $gray-black;
+    padding-left: 5px;
+  }
+}
+
+/* tablet and bigger */
+@media (min-width: 768px) {
+  .header {
+    h2 {
+      //padding-bottom: 20px;
+    }
+  }
+}

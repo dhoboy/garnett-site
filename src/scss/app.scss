@@ -1,0 +1,70 @@
+html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  font-size: 14px;
+  background-color: #fff;
+
+  #garnett-site {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 800px;
+    $gray: #aaa;
+    $gray-black: #333;
+    $black: #000;
+
+    h1 {
+      margin: 0px;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .blurb {
+      width: 600px;
+    }
+
+    @import './colors';
+    @import './header';
+    @import './menu-bar';
+    @import './main-content';
+    //@import './footer';
+  }
+}
+
+// tablet and bigger
+@media (min-width: 768px) {
+  html {
+    #garnett-site {
+      max-width: 100%;
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .blurb {
+        width: 1000px;
+      }
+    }
+  }
+}
