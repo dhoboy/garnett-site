@@ -2,6 +2,7 @@
   padding: 0 15px 25px 15px;
   
   .bio, .acac, .how-teach, .testimonials, .contact {
+    padding: 0 10px 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +13,7 @@
       padding-top: 10px;
     }
     .photo {
-      width: 600px;
+      width: 100%;
       height: 600px;
       border-radius: 4px;
       background-size: cover;
@@ -72,7 +73,7 @@
   .main-content {
     .bio {
       .photo {
-        width: 1000px;
+        width: 85%;
         height: 600px;
       }
     }
@@ -91,6 +92,7 @@
 
     .bio, .acac, .how-teach, .testimonials, .contact {
       margin-top: 25px;
+      padding: 0 100px 0 100px;
     }
   }
 }
