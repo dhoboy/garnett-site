@@ -1,11 +1,13 @@
 .main-content {
-  padding: 0 15px;
+  padding: 0 15px 25px 15px;
   
-  .bio {
-    //margin-top: 50px;
+  .bio, .acac, .how-teach, .testimonials, .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .bio {
     h2 {
       padding-top: 10px;
     }
@@ -19,29 +21,47 @@
   }
 
   .acac, .how-teach {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     p {
       padding-bottom: 25px;
+      span {
+        display: block;
+        font-weight: 700;
+        &:before {
+          content: "- ";
+        }
+      }
     }
   }
 
   .testimonials {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     p {
       padding-bottom: 25px;
+      padding: 10px;
+      margin-bottom: 25px;
+      .fa-quote-left {
+        color: darken($background-light-gray, 20%);
+        padding-right: 5px;
+        font-size: 18px;
+      }
       span {
-        font-weight: 700;
+        font-style: italic;
         display: block;
         font-size: 14px;
+        margin-top: 5px;
         &:before {
           content: "- ";
         }
+      }
+    }
+  }
+
+  .contact {
+    p {
+      padding-bottom: 10px;
+      svg {
+        font-size: 24px;
+        padding-right: 10px;
+        color: darken($background-light-gray, 20%);
       }
     }
   }
@@ -58,9 +78,19 @@
     }
 
     .testimonials {
-      p span {
-        font-size: 18px;
+      p {
+        .fa-quote-left {
+          padding-right: 10px;
+          font-size: 24px;
+        }
+        span {
+          font-size: 18px;
+        }
       }
+    }
+
+    .bio, .acac, .how-teach, .testimonials, .contact {
+      margin-top: 25px;
     }
   }
 }

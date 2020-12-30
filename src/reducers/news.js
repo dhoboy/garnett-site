@@ -1,5 +1,5 @@
 const initialState = {
-  loading: false,
+  loading: true,
   loadMore: false,
   error: false,
   data: [],
@@ -10,10 +10,10 @@ const news = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch(type) {
-    case "GET_NEWS_FETCHING": 
+    case "GET_NEWS_FETCHING":
       return {
         ...state,
-        loading: true,
+        [+payload.page > 1 ? "loadMore" : "loading"]: true,
         error: false,
       }
     
@@ -21,6 +21,7 @@ const news = (state = initialState, action) => {
       return {
         ...state,
         data: state.data.concat(payload.data),
+        page: payload.page,
         loading: false,
         loadMore: false,
         error: false,

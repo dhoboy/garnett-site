@@ -1,13 +1,11 @@
 html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
+  @import './colors';
   font-size: 14px;
-  background-color: #fff;
+  background-color: $white;
 
   #garnett-site {
     margin: auto;
@@ -15,16 +13,11 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 800px;
-    $gray: #aaa;
-    $gray-black: #333;
-    $black: #000;
-
+    
     h1 {
       margin: 0px;
       font-size: 40px;
       font-weight: 700;
-      text-transform: uppercase;
     }
 
     h2 {
@@ -37,14 +30,43 @@ html {
     }
 
     .blurb {
-      width: 600px;
+      width: 570px;
     }
 
-    @import './colors';
+    .loading {
+      font-size: 75px;
+      width: 85px;
+      margin: 100px auto 50px;
+      color: darken($background-light-gray, 20%);
+      animation: spin 2.5s linear 0s infinite; // direction fill-mode;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(90deg); }
+      50% { transform: rotate(180deg); }
+      75% { transform: rotate(270deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h2.error {
+      text-align: center;
+      margin-top: 100px;
+      color: $error-red;
+    }
+
     @import './header';
     @import './menu-bar';
     @import './main-content';
-    //@import './footer';
+    @import './news';
+    
+    .footer {
+      background-color: $background-light-gray;
+      padding: 10px;
+      text-align: right;
+      font-weight: 700;
+      font-size: 14px;
+    }
   }
 }
 
@@ -62,8 +84,12 @@ html {
       p {
         font-size: 20px;
       }
+      .footer {
+        padding: 15px;
+        font-size: 16px;
+      }
       .blurb {
-        width: 1000px;
+        width: 820px;
       }
     }
   }

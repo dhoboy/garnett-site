@@ -1,12 +1,12 @@
-import { fetchBio, fetchNews } from './api';
+import { fetchNews } from './api';
 
-export const getNews = () => {
+export const getNews = ({ page = 1 } = {}) => {
   return (dispatch) => {
-    dispatch({ type: "GET_NEWS_FETCHING", payload: { getNews: "true" }});
+    dispatch({ type: "GET_NEWS_FETCHING", payload: { page }});
     
-    dispatch(fetchNews()).then(resp => {
+    dispatch(fetchNews({ page })).then(resp => {
       console.log("resp: ", resp);
-      dispatch({ type: "GET_NEWS_SUCCESS", payload: { data: resp.data }});
+      dispatch({ type: "GET_NEWS_SUCCESS", payload: { data: resp.data, page }});
     }).catch(error => {
       dispatch({ type: "GET_NEWS_ERROR", payload: { error }})
     });

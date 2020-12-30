@@ -6,11 +6,11 @@
 
   .menu-bar-item {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     a {
       font-weight: 400;
       text-decoration: none;
-      color: $gray-black;
+      color: $text-black;
 
       &.current {
         border-bottom: 1px solid $black;

@@ -20,14 +20,15 @@ export const initAPI = () => {
   };
 };
 
-export const fetchNews = () => {
+export const fetchNews = ({ page = 1 } = {}) => {
   return (dispatch, getState) => {    
     const { news = {} } = getState().api;
-    console.log("news batch: ", news);
-    return api.get(`/posts?categories=${news.id}`);
+    return api.get(`/posts?categories=${news.id}&_embed&page=${page}`);
   }
 };
 
+// maybe build this out later to all come from the wordpress
+// for now, just getting the newsfeed from the wordpress
 /*export const fetchBio = () => {
   return api.get("/posts?category=bio");
 };
