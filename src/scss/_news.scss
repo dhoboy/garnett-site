@@ -1,10 +1,10 @@
 .news {
+  padding: 0 10px 0 10px;
   .news-card {
     border: 1px solid $border-gray;
     border-radius: 4px;
     box-shadow: 1px 1px 3px lighten($border-gray, 8%);
     padding: 0 10px;
-    width: 570px;
     margin: auto auto 25px auto;
     .title {
       display: flex;
@@ -17,8 +17,8 @@
       padding-bottom: 10px;
     }
     .featured-image {
-      width: 570px; //100%; //600px;
       height: 400px;
+      width: 100%;
       border-radius: 4px;
       background-size: cover;
       background-position: center center;
@@ -49,9 +49,9 @@
     margin-top: 25px;
     .news-card {
       padding: 0 20px 10px 20px;
-      width: 820px;
+
       .featured-image {
-        width: 820px;
+        width: 50%;
       }
     }
   }

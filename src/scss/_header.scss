@@ -11,9 +11,8 @@
   text-align: center;
   padding: 10px;
   h1 {
-    padding: 20px 20px 0px 0px;
+    //padding: 20px 20px 0px 0px;
     margin-bottom: 0px;
-    letter-spacing: 0.2em;
   }
   h2 {
     margin-top: 0px;
@@ -38,6 +37,11 @@
 
 /* tablet and bigger */
 @media (min-width: 768px) {
+  .largeHeader {
+    h1 {
+      letter-spacing: 0.2em;
+    }
+  }
   .smallHeader {
     padding: 15px;
   }

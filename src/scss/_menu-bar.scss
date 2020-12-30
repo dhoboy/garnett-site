@@ -6,7 +6,7 @@
 
   .menu-bar-item {
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     a {
       font-weight: 400;
       text-decoration: none;
@@ -20,6 +20,14 @@
       &:hover {
         color: $black;
       }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .menu-bar {
+    .menu-bar-item {
+      font-size: 14px;
     }
   }
 }
