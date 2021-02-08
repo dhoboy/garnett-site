@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/garnett-site/static/css/main.4ab60b96.chunk.css",
+    "main.js": "/garnett-site/static/js/main.b0a59fb4.chunk.js",
+    "main.js.map": "/garnett-site/static/js/main.b0a59fb4.chunk.js.map",
+    "runtime-main.js": "/garnett-site/static/js/runtime-main.5a279c2d.js",
+    "runtime-main.js.map": "/garnett-site/static/js/runtime-main.5a279c2d.js.map",
+    "static/js/2.b66c24b3.chunk.js": "/garnett-site/static/js/2.b66c24b3.chunk.js",
+    "static/js/2.b66c24b3.chunk.js.map": "/garnett-site/static/js/2.b66c24b3.chunk.js.map",
+    "index.html": "/garnett-site/index.html",
+    "precache-manifest.44515228e8748524a173118b714dc85a.js": "/garnett-site/precache-manifest.44515228e8748524a173118b714dc85a.js",
+    "service-worker.js": "/garnett-site/service-worker.js",
+    "static/css/main.4ab60b96.chunk.css.map": "/garnett-site/static/css/main.4ab60b96.chunk.css.map",
+    "static/js/2.b66c24b3.chunk.js.LICENSE.txt": "/garnett-site/static/js/2.b66c24b3.chunk.js.LICENSE.txt",
+    "static/media/garnett.jpg": "/garnett-site/static/media/garnett.1a4f65bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a279c2d.js",
+    "static/js/2.b66c24b3.chunk.js",
+    "static/css/main.4ab60b96.chunk.css",
+    "static/js/main.b0a59fb4.chunk.js"
+  ]
+}
