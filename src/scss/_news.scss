@@ -1,5 +1,6 @@
 .news {
   padding: 0 10px 0 10px;
+  
   .news-card {
     border: 1px solid $border-gray;
     border-radius: 4px;
@@ -54,5 +55,17 @@
         width: 50%;
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .news {
+    padding: 0 50px 0 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news {
+    padding: 0 100px 0 100px;
   }
 }
