@@ -1,8 +1,8 @@
 .menu-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 0 15px 0;
+  justify-content: space-between;
+  padding: 10px 0;
 
   .menu-bar-item {
     display: inline-block;
@@ -35,6 +35,7 @@
 // tablet and bigger
 @media (min-width: 768px) {
   .menu-bar {
+    justify-content: space-around;
     .menu-bar-item {
       font-size: 24px;
     }
