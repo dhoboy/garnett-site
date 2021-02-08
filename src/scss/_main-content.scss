@@ -1,5 +1,5 @@
 .main-content {
-  padding: 0 15px 25px 15px;
+  padding: 0 25px 25px 25px;
   
   .bio, .acac, .how-teach, .testimonials, .contact {
     padding: 0 10px 0 10px;
@@ -59,8 +59,11 @@
   .contact {
     p {
       padding-bottom: 10px;
+      display: flex;
+      align-items: center;
       svg {
-        font-size: 24px;
+        font-size: 20px;
+        width: 24px;
         padding-right: 10px;
         color: darken($background-light-gray, 20%);
       }
@@ -91,8 +94,14 @@
     }
 
     .bio, .acac, .how-teach, .testimonials, .contact {
-      margin-top: 25px;
-      padding: 0 100px 0 100px;
+      margin-top: 30px;
+      padding: 0 150px 0 150px;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content .bio .photo {
+    background-position: top;
   }
 }
