@@ -5,10 +5,13 @@ import AppContent from "./AppContent";
 import '@fortawesome/fontawesome-free/js/all.js';
 import "./scss/app.scss";
 
+// use basename={"garnett"} in the HashRouter
+// if deploying this to gh-pages, for prod, don't need it
+
 const App = ({ store = {} }) => {
   return (
     <Provider store={store}>
-      <HashRouter hashType="noslash" basename={"garnett"}>
+      <HashRouter hashType="noslash">
         <AppContent />
       </HashRouter>
     </Provider>

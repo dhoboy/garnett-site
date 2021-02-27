@@ -12,11 +12,11 @@ const Contact = () => {
         Email: garnettmellen@gmail.com
       </p>
       <p className="blurb">
-        <i class="fab fa-instagram"></i>
+        <i className="fab fa-instagram"></i>
         <span>Instagram: <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/strengthvigorvitality/">instagram.com/strengthvigorvitality/</a></span>
       </p>
       <p className="blurb">
-        <i class="fas fa-walking"></i>
+        <i className="fas fa-walking"></i>
         <span>ACAC: <a target="_blank" rel="noopener noreferrer" href="https://acac.com/eleanormellen/">acac.com/eleanormellen/</a></span>
       </p>
     </div>
